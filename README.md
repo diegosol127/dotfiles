@@ -60,6 +60,8 @@ echo /home/linuxbrew/.linuxbrew/bin/zsh | sudo tee -a /etc/shells
 chsh -s $(which zsh)
 ```
 
+Since you likely are originally running these commands from a `bash` shell, you will need to open a `zsh` instance to apply all settings. You can do this by closing the terminal and reopening (since `zsh` should now be configured to be the default shell) or by simply running `zsh`.
+
 # Tmux
 
 The `prefix` key for this configuration is `Ctrl-Space`. Below are some useful commands to remember.
