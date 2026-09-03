@@ -64,28 +64,42 @@ Since you likely are originally running these commands from a `bash` shell, you 
 
 # Tmux
 
+To load the tmux plugins from this configuration and apply the settings, run
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+tmux source ~/.config/tmux/tmux.conf
+~/.config/tmux/plugins/tpm/bin/install_plugins
+```
+
 The `prefix` key for this configuration is `Ctrl-Space`. Below are some useful commands to remember.
 
 Source tmux configuration.
 
-```bash
+```
 prefix + R
 ```
 
 Source zsh configuration in current pane.
 
-```bash
+```
 prefix + r
+```
+
+Install tmux plugins with TPM.
+
+```
+prefix + I
 ```
 
 Save tmux environment.
 
-```bash
+```
 prefix + Ctrl-s
 ```
 
 Restore tmux environment.
 
-```bash
+```
 prefix + Ctrl-r
 ```
