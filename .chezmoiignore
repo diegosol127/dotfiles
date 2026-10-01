@@ -1,1 +1,17 @@
 README.md
+
+# Files to ignore on Windows
+{{- if eq .chezmoi.os "windows" }}
+Documents/
+!Documents/*PowerShell/
+.*shrc
+.config/alacritty/
+.config/starship/
+.config/tmux/
+.local/
+{{- end }}
+
+# Files to ignore on Linux
+{{- if eq .chezmoi.os "linux" }}
+Documents/
+{{- end }}
